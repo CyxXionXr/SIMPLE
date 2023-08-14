@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup as sop
 from rich.console import Console as sol
 from rich import print as prints
 from rich.console import Console
-from rich.panel import Panel
 from concurrent.futures import ThreadPoolExecutor as tred
 from rich import pretty
 from rich.tree import Tree
