@@ -485,7 +485,7 @@ def passwrd():
 	global prog,des
 	kopi()
 	print(f'{kun}└──{x}[{hijo}•{x}] MAINKAN MODE PESAWAT SETIAP 300 IDZ ')
-	print(f'{kun}└─────────────────────────────────────────────{x}\n')
+	print(f'{kun}└────────────────────────────────────────────{x}\n')
 	prog = Progress(SpinnerColumn('clock'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
 	des = prog.add_task('',total=len(id2))
 	with prog:
