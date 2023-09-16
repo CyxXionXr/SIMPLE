@@ -160,7 +160,7 @@ def menu():
                 useridz = json.loads(baz_ganteng.text)['id']
                 username = json.loads(baz_ganteng.text)['name']
             except KeyError:
-                login_cokoes()
+                login_cokies()
         except requests.exceptions.ConnectionError:
             print(f"{kun}╭────────────────────────────────────────────{puti}")
             exit(f"{kun}└──[{mer} Koneksi Problem ")
