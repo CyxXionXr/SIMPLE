@@ -104,7 +104,7 @@ biru = '\x1b[1;94m' # WARNA-BIRU
 
 #----------[ HAPUS ]----------#		
 def ganti_cokies():
-      try:os.remove(".cyxieoncok.txt")
+      try:os.remove(".cyxieoncokies.txt")
       except:pass
       try:os.remove(".cyxieontoken.txt")
       except:pass
