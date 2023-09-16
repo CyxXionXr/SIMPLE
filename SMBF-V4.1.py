@@ -162,7 +162,7 @@ def menu():
             except KeyError:
                 print(f"{kun}╭────────────────────────────────────────────{puti}")
                 print(f"{kun}└──[{mer} Akun anda terkena limit atau mode free silakan ganti cookies atau ubah ke mode data :-(")
-                time.sleep(0.5)
+                time.sleep(0.10)
                 login_cokies()
         except requests.exceptions.ConnectionError:
             print(f"{kun}╭────────────────────────────────────────────{puti}")
@@ -170,7 +170,7 @@ def menu():
         except IOError:
             print(f"{kun}╭────────────────────────────────────────────{puti}")
             print(f"{kun}└──[{mer} Akun anda terkena limit atau mode free silakan ganti cookies atau ubah ke mode data :-(")
-            time.sleep(0.5)
+            time.sleep(0.10)
             login_cokies()
         except IOError:
             ganti_cokies()
