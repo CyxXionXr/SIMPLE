@@ -161,17 +161,13 @@ def menu():
                 username = json.loads(baz_ganteng.text)['name']
             except KeyError:
                 print(f"{kun}╭────────────────────────────────────────────{puti}")
-                print(f"{kun}└──[{mer} Akun anda terkena limit atau mode free silakan ganti cookies atau ubah ke mode data :-(")
-                time.sleep(7)
-                login_cokies()
+                exit(f"{kun}└──[{mer} Akun anda terkena limit atau mode free silakan ganti cookies atau ubah ke mode data :-(")
         except requests.exceptions.ConnectionError:
             print(f"{kun}╭────────────────────────────────────────────{puti}")
             exit(f"{kun}└──[{mer} Koneksi Problem ")
         except IOError:
             print(f"{kun}╭────────────────────────────────────────────{puti}")
-            print(f"{kun}└──[{mer} Akun anda terkena limit atau mode free silakan ganti cookies atau ubah ke mode data :-(")
-            time.sleep(7)
-            login_cokies()
+            exit(f"{kun}└──[{mer} Akun anda terkena limit atau mode free silakan ganti cookies atau ubah ke mode data :-(")
         except IOError:
             ganti_cokies()
             print(f"{kun}╭────────────────────────────────────────────{puti}")
