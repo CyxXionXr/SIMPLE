@@ -750,7 +750,7 @@ def ceker(idf,pw):
 	except Exception as c:
 		tree = Tree("")
 		tree.add(f"{hijo}{idf}{puti}").add(f"{hijo}{pw}{puti}")
-		tree.add(f"{mer}spam ip tidak dapat cek ops{puti}i")
+		tree.add(f"{mer}spam ip tidak dapat cek opsi{puti}")
 		prints(tree)
 		#open('CYXIEON-CP/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
 		#cp+=1
