@@ -742,7 +742,7 @@ def ceker(idf,pw):
 			tree = Tree("")
 			tree.add(f"{hijo}Tapyes / A2f ( cek di mbasic ){puti}")
 			prints(tree)
-			#open('CYXIEON-OK/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
+			#open('CYXIEON-CP/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
 			#cp+=1
 		else:
 			for opsii in opsi:
@@ -752,7 +752,7 @@ def ceker(idf,pw):
 		tree.add(f"{hijo}{idf}{puti}").add(f"{hijo}{pw}{puti}")
 		tree.add(f"{mer}spam ip tidak dapat cek ops{puti}i")
 		prints(tree)
-		#open('CYXIEON-OK/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
+		#open('CYXIEON-CP/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
 		#cp+=1
 		
 #----------[ SYSTEM-CONTROL ]----------#	
