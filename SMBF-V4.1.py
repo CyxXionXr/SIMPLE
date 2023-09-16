@@ -149,7 +149,7 @@ def login_cokies():
             print(f"{kun}╭────────────────────────────────────────────{puti}")
             exit(f"{kun}└──[{mer} Login Gagal Cek Tumbal Lo Ngab :-(")		
   
-# Menu      
+#----------[ BAGIAN-MENU ]----------#            
 def menu():
         try:
             token = open('.cyxieontoken.txt','r').read()
@@ -160,11 +160,17 @@ def menu():
                 useridz = json.loads(baz_ganteng.text)['id']
                 username = json.loads(baz_ganteng.text)['name']
             except KeyError:
+                print(f"{kun}╭────────────────────────────────────────────{puti}")
+                print(f"{kun}└──[{mer} Akun anda terkena limit atau mode free silakan ganti cookies atau ubah ke mode data :-(")
+                time.sleep(0.5)
                 login_cokies()
         except requests.exceptions.ConnectionError:
             print(f"{kun}╭────────────────────────────────────────────{puti}")
             exit(f"{kun}└──[{mer} Koneksi Problem ")
         except IOError:
+            print(f"{kun}╭────────────────────────────────────────────{puti}")
+            print(f"{kun}└──[{mer} Akun anda terkena limit atau mode free silakan ganti cookies atau ubah ke mode data :-(")
+            time.sleep(0.5)
             login_cokies()
         except IOError:
             ganti_cokies()
@@ -191,7 +197,7 @@ def menu():
             ganti_cokies()
         else:
             print(f"{kun}╭────────────────────────────────────────────{puti}")
-            exit(f"{kun}└──[{mer} Yang bener ter :-( ")       
+            exit(f"{kun}└──[{mer} Yang bener ter :-( ")            
 
 #----------[ CRACK-PUBLIK  ]----------#            
 def crack_publik():
